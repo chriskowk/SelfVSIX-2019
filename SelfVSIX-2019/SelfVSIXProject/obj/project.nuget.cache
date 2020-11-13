@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tVZvUja6rOGPKY4B2klL9jM390GuwyPzLJr2RgZ6cOgUBglnnYYtF60n4Xvv526DCKNfc7RdWLg4YohB0jsOug==",
+  "dgSpecHash": "zvskPJiR9//HepVoVcnt2279nPdo5TW9sxA3MGnJ1LfEyqJANGnkTAVVyLLQBvnD/n5xi1wpaznTjdJGhdu1Rg==",
   "success": true,
-  "projectFilePath": "F:\\GitHub\\SelfVSIX-master\\SelfVSIXProject\\SelfVSIXProject.csproj",
+  "projectFilePath": "E:\\GitHub\\SelfVSIX-2019\\SelfVSIX-2019\\SelfVSIXProject\\SelfVSIXProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guoshaoyue\\.nuget\\packages\\envdte\\8.0.2\\envdte.8.0.2.nupkg.sha512",
     "C:\\Users\\guoshaoyue\\.nuget\\packages\\envdte100\\10.0.3\\envdte100.10.0.3.nupkg.sha512",

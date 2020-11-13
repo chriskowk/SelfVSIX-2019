@@ -72,7 +72,8 @@ namespace SelfVSIXProject
             {
                 _cboProjects.Items.Add(p.Name);
             }
-            _cboProjects.SelectedIndex = 0;
+            if (_cboProjects.Items.Count > 0) 
+                _cboProjects.SelectedIndex = 0;
         }
 
         [Obsolete]
