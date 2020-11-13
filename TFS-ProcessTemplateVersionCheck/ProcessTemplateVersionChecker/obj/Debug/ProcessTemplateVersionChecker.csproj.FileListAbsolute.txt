@@ -1,0 +1,15 @@
+F:\GitHub\TFS-ProcessTemplateVersionCheck\ProcessTemplateVersionChecker\bin\Debug\ProcessTemplateVersionChecker.exe.config
+F:\GitHub\TFS-ProcessTemplateVersionCheck\ProcessTemplateVersionChecker\bin\Debug\ProcessTemplateVersionChecker.exe
+F:\GitHub\TFS-ProcessTemplateVersionCheck\ProcessTemplateVersionChecker\bin\Debug\ProcessTemplateVersionChecker.pdb
+F:\GitHub\TFS-ProcessTemplateVersionCheck\ProcessTemplateVersionChecker\obj\Debug\ProcessTemplateVersionChecker.MainForm.resources
+F:\GitHub\TFS-ProcessTemplateVersionCheck\ProcessTemplateVersionChecker\obj\Debug\ProcessTemplateVersionChecker.Properties.Resources.resources
+F:\GitHub\TFS-ProcessTemplateVersionCheck\ProcessTemplateVersionChecker\obj\Debug\ProcessTemplateVersionChecker.csproj.GenerateResource.Cache
+F:\GitHub\TFS-ProcessTemplateVersionCheck\ProcessTemplateVersionChecker\obj\Debug\ProcessTemplateVersionChecker.exe
+F:\GitHub\TFS-ProcessTemplateVersionCheck\ProcessTemplateVersionChecker\obj\Debug\ProcessTemplateVersionChecker.pdb
+F:\GitHub\TFS-ProcessTemplateVersionCheck\ProcessTemplateVersionChecker\bin\Debug\Microsoft.TeamFoundation.Core.WebApi.dll
+F:\GitHub\TFS-ProcessTemplateVersionCheck\ProcessTemplateVersionChecker\bin\Debug\Microsoft.VisualStudio.Services.WebApi.dll
+F:\GitHub\TFS-ProcessTemplateVersionCheck\ProcessTemplateVersionChecker\bin\Debug\Microsoft.VisualStudio.Services.Client.Interactive.dll
+F:\GitHub\TFS-ProcessTemplateVersionCheck\ProcessTemplateVersionChecker\bin\Debug\Newtonsoft.Json.dll
+F:\GitHub\TFS-ProcessTemplateVersionCheck\ProcessTemplateVersionChecker\obj\Debug\ProcessTemplateVersionChecker.csprojAssemblyReference.cache
+F:\GitHub\TFS-ProcessTemplateVersionCheck\ProcessTemplateVersionChecker\obj\Debug\ProcessTemplateVersionChecker.csproj.CoreCompileInputs.cache
+F:\GitHub\TFS-ProcessTemplateVersionCheck\ProcessTemplateVersionChecker\obj\Debug\ProcessTemplateVersionChecker.csproj.CopyComplete
