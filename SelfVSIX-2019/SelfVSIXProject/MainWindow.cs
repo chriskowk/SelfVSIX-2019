@@ -27,7 +27,6 @@ namespace SelfVSIXProject
     {
         private TfsTeamProjectCollection _tpc = null;
         private ProjectInfo[] _projects = null;
-        private ICommonStructureService _css = null;
         public MainWindow()
         {
             InitializeComponent();
@@ -35,7 +34,6 @@ namespace SelfVSIXProject
 
         private const string _HKEY_LOCAL_MACHINE = "HKEY_LOCAL_MACHINE";
         private static string _tfsUrisKeyPath = @"SOFTWARE\JetSun\3.0\Quartz\TfsTeamProjectCollectionUris";
-        //private static IDictionary<TfsTeamProjectCollectionUri, IList<Project>> _projects = new Dictionary<TfsTeamProjectCollectionUri, IList<Project>>();
         private void MainWindow_Load(object sender, EventArgs e)
         {
             if (_cboProjects.Items.Count > 0) return;
@@ -60,7 +58,6 @@ namespace SelfVSIXProject
                 _projects = tpp.SelectedProjects.OrderBy(a => a.Name).ToArray();
                 toolStripStatusLabel1.Text = string.Format("Connected to: [{0}]", _tpc.Uri.ToString());
 
-                _css = _tpc.GetService<ICommonStructureService>();
                 FillProjects();
             }
         }
@@ -109,6 +106,7 @@ namespace SelfVSIXProject
             {
                 Debug.Print(item["BugID"].ToString());
                 sql = string.Format("{0} and [System.Title] = '{1}'", base_sql, item["BugID"].ToString());
+                //运行路径下必须存在如下文件：Microsoft.WITDataStore64.dll，否则报错。另外“生成”Any CPU；去掉勾选“首选32位”选项
                 workItemStore = tpc.GetService<WorkItemStore>();
                 queryResults = workItemStore.Query(sql);
                 int cnt = queryResults.Count;

@@ -7031,20 +7031,20 @@
   },
   "packageFolders": {
     "C:\\Users\\guoshaoyue\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GitHub\\SelfVSIX-2019\\SelfVSIX-2019\\SelfVSIXProject\\SelfVSIXProject.csproj",
+      "projectUniqueName": "F:\\GitHub\\SelfVSIX-2019\\SelfVSIX-2019\\SelfVSIXProject\\SelfVSIXProject.csproj",
       "projectName": "SelfVSIXProject",
-      "projectPath": "E:\\GitHub\\SelfVSIX-2019\\SelfVSIX-2019\\SelfVSIXProject\\SelfVSIXProject.csproj",
+      "projectPath": "F:\\GitHub\\SelfVSIX-2019\\SelfVSIX-2019\\SelfVSIXProject\\SelfVSIXProject.csproj",
       "packagesPath": "C:\\Users\\guoshaoyue\\.nuget\\packages\\",
-      "outputPath": "E:\\GitHub\\SelfVSIX-2019\\SelfVSIX-2019\\SelfVSIXProject\\obj\\",
+      "outputPath": "F:\\GitHub\\SelfVSIX-2019\\SelfVSIX-2019\\SelfVSIXProject\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "D:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\guoshaoyue\\AppData\\Roaming\\NuGet\\NuGet.Config",
