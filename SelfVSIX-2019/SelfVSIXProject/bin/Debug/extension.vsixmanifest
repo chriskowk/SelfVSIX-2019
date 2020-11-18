@@ -1,8 +1,8 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <Identity Id="SelfVSIXProject.8dac779e-550d-45eb-9211-253fe9c83697" Version="2.0" Language="zh-Hans" Publisher="颜 刘" />
+    <Identity Id="SelfVSIXProject.8dac779e-550d-45eb-9211-253fe9c83697" Version="2.0" Language="zh-Hans" Publisher="Chris Kwok" />
     <DisplayName>SelfVSIXProject</DisplayName>
-    <Description xml:space="preserve">Empty VSIX Project.</Description>
+    <Description xml:space="preserve">批量导入健迅平台工作项到TFS的工具</Description>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
