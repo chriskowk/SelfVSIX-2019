@@ -34,14 +34,17 @@ namespace SelfVSIXProject
 
         private const string _HKEY_LOCAL_MACHINE = "HKEY_LOCAL_MACHINE";
         private static string _tfsUrisKeyPath = @"SOFTWARE\JetSun\3.0\Quartz\TfsTeamProjectCollectionUris";
+        private string _windowTitle = "";
         private void MainWindow_Load(object sender, EventArgs e)
         {
             if (_cboProjects.Items.Count > 0) return;
 
-            Connect2AzureDevOpsServer();
             string location = Assembly.GetExecutingAssembly().Location;
             FileInfo fi = new FileInfo(location);
-            this.Text = string.Format("导入工作项 Built-{0:yyyyMMdd.HH.mm}", fi.LastWriteTime);
+            _windowTitle = string.Format("导入工作项 Built-{0:yyyyMMdd.HH.mm}", fi.LastWriteTime);
+            this.Text = _windowTitle;
+
+            Connect2AzureDevOpsServer();
         }
 
         private void _btnConnect_Click(object sender, EventArgs e)
@@ -57,6 +60,7 @@ namespace SelfVSIXProject
                 _tpc = tpp.SelectedTeamProjectCollection;
                 _projects = tpp.SelectedProjects.OrderBy(a => a.Name).ToArray();
                 toolStripStatusLabel1.Text = string.Format("Connected to: [{0}]", _tpc.Uri.ToString());
+                this.Text = string.Format("{0} [{1}]", _windowTitle, _tpc.Uri.ToString());
 
                 FillProjects();
             }
@@ -69,7 +73,7 @@ namespace SelfVSIXProject
             {
                 _cboProjects.Items.Add(p.Name);
             }
-            if (_cboProjects.Items.Count > 0) 
+            if (_cboProjects.Items.Count > 0)
                 _cboProjects.SelectedIndex = 0;
         }
 
@@ -92,6 +96,12 @@ namespace SelfVSIXProject
             WorkItemCollection queryResults;
             WorkItem workItem;
             string updateSQL = string.Empty;
+
+            if (string.IsNullOrEmpty(workItemIds))
+            {
+                System.Windows.Forms.MessageBox.Show("请输入JSDesk平台工作项ID（串）或从提交版本提取填充", "导入JSDesk平台工作项", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
 
             TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(_tpc.Uri, CredentialCache.DefaultNetworkCredentials);
             tpc.Authenticate();
@@ -142,7 +152,7 @@ namespace SelfVSIXProject
             _txtTFSWorkItemIDs.Text = rets;
             if (!string.IsNullOrEmpty(updateSQL))
             {
-                if (SqlDbHelper.ExecuteSql(updateSQL) == 0) System.Windows.Forms.MessageBox.Show("更新JSDesk平台工作项失败！");
+                if (SqlDbHelper.ExecuteSql(updateSQL) == 0) System.Windows.Forms.MessageBox.Show("更新JSDesk平台工作项失败！", "导入JSDesk平台工作项", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return true;
