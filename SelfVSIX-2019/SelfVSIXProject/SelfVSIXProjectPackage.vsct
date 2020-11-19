@@ -125,7 +125,7 @@
             透明图生成网址：http://ico.toolscat.com/
       -->
       <Bitmap guid="guidImages" href="Resources\zenze.ico" usedList="bmpPic1" />
-      <Bitmap guid="guidImages0" href="Resources\plugin.ico" usedList="bmpPic1" />
+      <Bitmap guid="guidImages0" href="Resources\workitem.ico" usedList="bmpPic1" />
       <Bitmap guid="guidImages1" href="Resources\strlength.png" usedList="bmpPic1" />
       <Bitmap guid="guidImages2" href="Resources\numorabc.png" usedList="bmpPic1" />
       <Bitmap guid="guidImages3" href="Resources\buquancs.png" usedList="bmpPic1" />

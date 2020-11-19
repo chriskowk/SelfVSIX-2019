@@ -124,3 +124,4 @@ F:\GitHub\SelfVSIX-2019\SelfVSIX-2019\SelfVSIXProject\obj\Debug\SelfVSIXProject.
 F:\GitHub\SelfVSIX-2019\SelfVSIX-2019\SelfVSIXProject\obj\Debug\extension.vsixmanifest
 F:\GitHub\SelfVSIX-2019\SelfVSIX-2019\SelfVSIXProject\obj\Debug\files.json
 F:\GitHub\SelfVSIX-2019\SelfVSIX-2019\SelfVSIXProject\obj\Debug\createTemplateManifests.cache
+F:\GitHub\SelfVSIX-2019\SelfVSIX-2019\SelfVSIXProject\obj\Debug\_EmptyResource.resources.original

@@ -111,6 +111,7 @@
     <Content Include="Resources\strlength.png" />
     <Content Include="Resources\numorabc.png" />
     <Content Include="Resources\template.png" />
+    <Content Include="Resources\workitem.ico" />
     <Content Include="Resources\zenze.ico" />
   </ItemGroup>
   <ItemGroup>
